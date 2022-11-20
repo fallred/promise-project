@@ -13,24 +13,24 @@ let p = new Promise((resolve,reject)=>{
   resolve();
 })
 
-// p.then(data=>{
-//   return new Promise((resolve,reject)=>{
-//     resolve(1000);
-//   })
-// }).then(data=>{
-//   console.log(data);
-// },(err)=>{
-//   console.log('err',err);
-// })
-
-
-let p = new Promise((resolve,reject)=>{
-  reject(1);
-})
-p.then(null, (err)=> {
-  throw err;
-}).then((val)=>{ //  then是异步的 (微任务)
-  console.log(val);
+p.then(data=>{
+  return new Promise((resolve,reject)=>{
+    resolve(1000);
+  })
+}).then(data=>{
+  console.log(data);
 },(err)=>{
-  console.log('----',err);
+  console.log('err',err);
 })
+
+
+// let p = new Promise((resolve,reject)=>{
+//   reject(1);
+// })
+// p.then(null, (err)=> {
+//   throw err;
+// }).then((val)=>{ //  then是异步的 (微任务)
+//   console.log(val);
+// },(err)=>{
+//   console.log('----',err);
+// })
