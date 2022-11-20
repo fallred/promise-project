@@ -8,7 +8,7 @@
 let Promise = require('./promise');
 
 let p = new Promise((resolve,reject)=>{
-  resolve();
+  resolve(1);
 })
 p.then((value) => {
   console.log(value)

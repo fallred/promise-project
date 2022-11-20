@@ -13,7 +13,7 @@
 // 6.promise 中可以同一个实例then多次,如果状态是pengding 需要将函数存放起来 等待状态确定后 在依次将对应的函数执行 (发布订阅)
 let promise = new Promise((resolve,reject)=>{
   setTimeout(() => {
-   resolve();
+   resolve(1);
   }, 1000);
   // resolve(2);// pending -> resolved
   // reject(); // pending -> reject

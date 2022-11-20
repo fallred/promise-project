@@ -13,15 +13,15 @@ let p = new Promise((resolve,reject)=>{
   resolve();
 })
 
-p.then(data=>{
-  return new Promise((resolve,reject)=>{
-    resolve(1000);
-  })
-}).then(data=>{
-  console.log(data);
-},(err)=>{
-  console.log('err',err);
-})
+// p.then(data=>{
+//   return new Promise((resolve,reject)=>{
+//     resolve(1000);
+//   })
+// }).then(data=>{
+//   console.log(data);
+// },(err)=>{
+//   console.log('err',err);
+// })
 
 
 let p = new Promise((resolve,reject)=>{
