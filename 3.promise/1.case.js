@@ -5,7 +5,7 @@
 // 5.如果调用then时 发现已经成功了 会让成功函数执行并且把成功的内容当作参数传递到函数中
 // 6.promise 中可以同一个实例then多次,如果状态是pengding 需要将函数存放起来 等待状态确定后 在依次将对应的函数执行 (发布订阅)
 // 7.如果类执行时出现了异常 那就变成失败态
-let Promise = require('./promise');
+let Promise = require('../2.promise/promise');
 
 let p = new Promise((resolve,reject)=>{
   resolve(1);

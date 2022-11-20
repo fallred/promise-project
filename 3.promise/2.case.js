@@ -7,7 +7,7 @@
 // 7. 如果then方法返回的是一个promise 那么会等待这个promise执行完决定返回的那个promise是成功还是失败
 // 8.为什么要返回一个新的promise而不是this promise状态确定后 就是不能更改。
 
-let Promise = require('./promise');
+let Promise = require('../2.promise/promise');
 
 let p = new Promise((resolve,reject)=>{
   resolve();

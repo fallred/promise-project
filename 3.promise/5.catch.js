@@ -1,4 +1,4 @@
-let Promise = require('./promise')
+let Promise = require('../2.promise/promise')
 let p = new Promise((resolve,reject)=>{
   resolve();
 });
